@@ -1,0 +1,1 @@
+# Activitat-Llenguaje-bash-scripting
