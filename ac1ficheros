@@ -1,0 +1,18 @@
+#!/bin/bash
+
+rm -r directory 
+mkdir directory
+cd directory
+touch patata.txt tomate.txt lechuga.txt
+
+echo "Este es el fichero del señor Patata" > patata.txt
+echo "Este es el fichero de la señora tomate" > tomate.txt
+echo "Este es el fichero de la señora lechuga" > lechuga.txt
+
+ls -la
+
+cd ..
+rm -r copia_directory
+mkdir copia_directory
+
+cp -R directory/!(tomate.txt) copia_directory
