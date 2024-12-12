@@ -16,3 +16,5 @@ rm -r copia_directory
 mkdir copia_directory
 
 cp -R directory/!(tomate.txt) copia_directory
+
+rsync -aP --exclude=tomate.txt directory/* copia_directory
